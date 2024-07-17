@@ -1,0 +1,121 @@
+{
+    "manifestVersion": "3.2",
+    "admin": {
+      "address": "0x50cf3Ea4926dcc8Aa0DBAFa4FB63CB161D2b7fAd",
+      "txHash": "0x47882ca887a19983329c6d78e2c4e30c4b7ef60bd77a722b42df1ae3446239ed"
+    },
+    "proxies": [
+      {
+        "address": "0xE300d4b7694b39601E8C91618674BD27eE10841D",
+        "txHash": "0xf91bebab7c1a5b38d7e523392327da5f44dc92ed21f8580cae1d40caff5be068",
+        "kind": "transparent"
+      }
+    ],
+    "impls": {
+      "5782cfd0f697136f0e170884383539303e1016ffbdb21ad7ef93ee38409b2b82": {
+        "address": "0xCf284748a08A28a313c6Da6C854d475e59b379d7",
+        "txHash": "0x6addeba91177772c5f670ef25e23a30ab493bbaa228eb12b6deeb2613bc0f618",
+        "layout": {
+          "solcVersion": "0.8.20",
+          "storage": [],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint64": {
+              "label": "uint64"
+            },
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "namespaces": {
+            "erc7201:openzeppelin.storage.Ownable": [
+              {
+                "contract": "OwnableUpgradeable",
+                "label": "_owner",
+                "type": "t_address",
+                "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24"
+              }
+            ],
+            "erc7201:openzeppelin.storage.Initializable": [
+              {
+                "contract": "Initializable",
+                "label": "_initialized",
+                "type": "t_uint64",
+                "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69"
+              },
+              {
+                "contract": "Initializable",
+                "label": "_initializing",
+                "type": "t_bool",
+                "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73"
+              }
+            ]
+          }
+        }
+      },
+      "5014ac764602f249153babf24e0627a13bc11aba26a59e9d5d07d92b8d1aa7da": {
+        "address": "0xe48c7F4132E1Ab5eEb23295baDDA907F6Af24917",
+        "txHash": "0x3976f6f94a034073343808f0d48954b46fd0f7aae207d80a1af276b70cc4bccc",
+        "layout": {
+          "solcVersion": "0.8.20",
+          "storage": [
+            {
+              "label": "lastAttendanceTime",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "EventInteraction",
+              "src": "contracts/bnb/EventInteraction.sol:9"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint64": {
+              "label": "uint64"
+            },
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "namespaces": {
+            "erc7201:openzeppelin.storage.Ownable": [
+              {
+                "contract": "OwnableUpgradeable",
+                "label": "_owner",
+                "type": "t_address",
+                "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24"
+              }
+            ],
+            "erc7201:openzeppelin.storage.Initializable": [
+              {
+                "contract": "Initializable",
+                "label": "_initialized",
+                "type": "t_uint64",
+                "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69"
+              },
+              {
+                "contract": "Initializable",
+                "label": "_initializing",
+                "type": "t_bool",
+                "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+  
